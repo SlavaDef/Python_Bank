@@ -48,8 +48,10 @@ prog.geometry('900x600+500+100')  # 900x600 розмір вікна +500+100 + 5
 prog.config(bg='greenYellow')  # Колір
 prog.wm_attributes("-alpha", 0.8)  # прозорість
 
-entry = Entry(prog, font=('Comic Sanc MS', 12), bg='yellow')
+entry = Entry(prog, font=('Comic Sanc MS', 12, 'bold'), bg='yellow')
+
 entry.place(x=330, y=350, width=200, height=30)
+
 
 gl_text = Label(prog,
                 text='Ваш початковий баланс',  # текст у вікні
@@ -142,6 +144,7 @@ but_save = Button(prog,
                   relief=RAISED,
                   bd=5,
                   command=save_file)
+
 
 gl_text.place(x=10, y=10)  # задаемо розташування тексту
 gl_text2.place(x=350, y=10)

@@ -13,8 +13,28 @@ prog.iconbitmap('C:/Users/Admin/Desktop/MY_PROGS/requestPrivat/dog.ico')  # шл
 # photo=PhotoImage('C:/Users/Admin/Desktop/MY_PROGS/requestPrivat/south.png') # для формату png
 # prog.iconphoto(False,photo)
 
+user_name = Label(prog, bg='sky blue', fg='white', font=('Comic Sanc MS', 15, 'bold'), text='Логін Користувача:', padx=20, anchor=E, )
+user_name.place(x=150,y=100,width=220,height=30)
+user_login = Label(prog, bg='sky blue', fg='white', font=('Comic Sanc MS', 15, 'bold'), text='Пароль:', padx=20,anchor=E )
+user_login.place(x=150,y=140,width=220,height=30)
+
+
+
+login = Entry(prog, font=('Comic Sanc MS', 15, 'bold'))
+password = Entry(prog, font=('Comic Sanc MS', 15, 'bold'))
+login.place(x=380,y=100,width=220,height=30)
+password.place(x=380,y=140,width=220,height=30)
+
+ent_exit = Button(prog, text='Вхід', fg="black", font=('Comic Sanc MS', 15, 'bold') )
+ent_exit.place(x=270,y=180,width=220,height=30)
+
+
+
+
+
 def word():
     return "YO!!!!"
+
 
 gl_text = Label(prog,
                 text="Hello from Bandera",  # текст у вікні
@@ -32,7 +52,7 @@ gl_text = Label(prog,
 
                 )
 
-gl_text.place(x=280, y=250, width=300, height=100)  # задаемо розташування тексту
+gl_text.place(x=280, y=300, width=300, height=100)  # задаемо розташування тексту
 
 but_1 = Button(prog,
                text="Kill ork",  # текст у вікні
@@ -60,5 +80,7 @@ but_2 = Button(prog,
                )
 
 but_2.place(x=480, y=450, width=200, height=50)
+
+
 
 prog.mainloop()

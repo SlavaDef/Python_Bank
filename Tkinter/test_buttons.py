@@ -62,7 +62,7 @@ start_x = 50  # початкова координата по y
 
 
 # Завантажуємо картинку через Pillow
-image = Image.open("egs.png")
+image = Image.open("../egs.png")
 img = ImageTk.PhotoImage(image)
 
 gl_text = Label(prog,
